@@ -8,7 +8,7 @@ public class TodoItemValidationTests
     [Fact]
     public void Assert_Todo_All_Fields()
     {
-        var todo = new TodoItem()
+        var todo = new TodoItem
         {
             Id = 1,
             Name = "create unit tests",
@@ -23,7 +23,7 @@ public class TodoItemValidationTests
     [Fact]
     public void Assert_Todo_Name_Missing()
     {
-        var todo = new TodoItem()
+        var todo = new TodoItem
         {
             Id = 1,
             IsComplete = false,
@@ -38,7 +38,7 @@ public class TodoItemValidationTests
     [Fact]
     public void Assert_Todo_Name_Is_Too_Short()
     {
-        var todo = new TodoItem()
+        var todo = new TodoItem
         {
             Id = 1,
             Name = "ab",
@@ -54,7 +54,7 @@ public class TodoItemValidationTests
     [Fact]
     public void Assert_Todo_Name_Is_Too_Long()
     {
-        var todo = new TodoItem()
+        var todo = new TodoItem
         {
             Id = 1,
             Name = "Lorem ipsum dolor sit amet, consectet",
